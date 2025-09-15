@@ -69,23 +69,4 @@ Alarm: STOPWATCH -> 'R' -> ALARM -> 'E' -> Select ALARM ON or ALARM OFF. In the 
 
 Timer: ALARM -> 'R' -> TIMER -> 'E' -> TIMER SET -> 'E' -> Set the countdown duration and press 'E' to start.
 
-## Project Structure 📁
-The code is organized into modular driver files and a main application file for clean and maintainable code.
 
-DIGITAL_CLOCK/
-│
-├── APP.c             # Main application logic and state machine
-├── APP.h             # Application-specific macros and definitions
-│
-├── DIO_interface.h   # Digital I/O driver interface
-├── DIO_program.c     # Digital I/O driver implementation
-├── DIO_private.h     # DIO private registers
-│
-├── KPD_interface.h   # Keypad driver interface
-├── KPD_program.c     # Keypad driver implementation
-│
-├── LCD_interface.h   # LCD driver interface
-├── LCD_program.c     # LCD driver implementation
-│
-└── ... (Other drivers like TIMER, GLOBINT, etc.)
-## Authors ✍️
